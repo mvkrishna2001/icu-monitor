@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1  Succesfully logged in. Enter the patient's vitals
+  form(action='users/process' method='POST')  
+    |Name: 
+    input(type='text' name='name')    
+    br
+    |Heart-rate: 
+    input(type='text' name='bpm')    
+    br
+    |BP: 
+    input(type='text' name='bp')    
+    br
+    input(type='submit' value='Submit')
+

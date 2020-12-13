@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Welcome to ICU Monitor. Login to monitor the patients
+  form(action='users/process' method='POST')  
+    |Name: 
+    input(type='text' name='name')    
+    br
+    |Email: 
+    input(type='text' name='email')    
+    br
+    |ID: 
+    input(type='text' name='id')    
+    br
+    input(type='submit' value='Login')
+    br
+    input(type='submit' value='Sign up')
